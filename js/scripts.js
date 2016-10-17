@@ -13,7 +13,7 @@ function ajax_get_json(){
 					// for(var ing in data.potions[obj].ingredients){
 					// 	'<li>' + data.potions[obj].ingredients[ing] + '</li>'
 					// }
-				'</ul><h2>Price:</h2><h2>$ '+ data.potions[obj].price +'</h2></div></div>';
+				'</ul><h2>Price:</h2><h2 class="price">$ '+ data.potions[obj].price +'</h2></div></div>';
 			}
 	    }
     }

@@ -8,7 +8,7 @@ function ajax_get_json(){
 		    var data = JSON.parse(hr.responseText);
 			potions.innerHTML = "";
 			for(var obj in data.potions){
-				potions.innerHTML += '<div class="potions-thumb"><img src="img/thumbs/'+data.potions[obj].image+'">' + '<p>' +data.potions[obj].name + ' - <strong class="price">'+ data.potions[obj].price+'</strong></p></div>';
+				potions.innerHTML += '<div class="potions-thumb"><img src="img/thumbs/'+data.potions[obj].image+'">' + '<p>' +data.potions[obj].name + ' - <strong class="price">$'+ data.potions[obj].price+'</strong></p></div>';
 			}
 	    }
     }

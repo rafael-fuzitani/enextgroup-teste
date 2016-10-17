@@ -119,8 +119,11 @@ header {
       text-decoration: none;
       margin-right: 30px; }
 
-section .potions #potions .potions-thumb p strong {
-  color: #d73a1e; }
+section .potions #potions .potions-thumb {
+  width: 33.33%;
+  display: inline-block; }
+  section .potions #potions .potions-thumb p strong.strong {
+    color: #d73a1e; }
 
 footer {
   background: #e6e6e6;

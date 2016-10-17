@@ -9,13 +9,12 @@ function ajax_get_json(){
 			potions.innerHTML = "";
 			for(var obj in data.potions){
 				var potionsObjs = data.potions[obj];
+				var objIngredients = potionsObjs.ingredients; 
 					console.log('before nested loop!');
-					console.log(potionsObjs.ingredients);
-				// for(var j = 0; j < potionsObjs.length; j++){ 
-				// 	var objIngredients = potionsObjs.ingredients[j]; 
-				// 		console.log(objIngredients);
-				// 		console.log('nested loop!');
-				// 	 }
+				for(var j = 0; j < objIngredients.length; j++){ 
+						console.log(objIngredients[j]);
+						console.log('nested loop!');
+					 }
 				potions.innerHTML += '<div class="potions-thumb"><img src="img/thumbs/'+ potionsObjs.image+'">' + '<p>' + potionsObjs.name + ' - <strong class="price">$'+ potionsObjs.price+'</strong></p></div>' + '<div class="potions-modal"><div class="potions-photo"><img src="img/'+ potionsObjs.image +'"></div><div class="potions-infos"><h2>'+ potionsObjs.name +'</h2><h2>Use/Effect</h2><p>'+ potionsObjs.effect +'</p><h2>Ingredients:</h2><ul>' + potionsObjs.ingredients +
 					//ingredients loop
 					

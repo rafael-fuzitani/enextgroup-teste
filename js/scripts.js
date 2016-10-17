@@ -8,7 +8,7 @@ function ajax_get_json(){
 		    var data = JSON.parse(hr.responseText);
 			potions.innerHTML = "";
 			for(var obj in data.potions){
-				potions.innerHTML += '<div class="potions-thumb"><img src="img/thumbs/'+data.potions[obj].image+'">' + '<p>' +data.potions[obj].name + ' - <strong class="price">$'+ data.potions[obj].price+'</strong></p></div>' + '<div class="potions-photo"><img src="img/+'+data.potions[obj].image +'"></div><h2>'+data.potions[obj].name +'</h2><h2>Use/Effect</h2><p>'+data.potions[obj].effect +'</p><h2>Ingredients:</h2><ul>'+ 
+				potions.innerHTML += '<div class="potions-thumb"><img src="img/thumbs/'+data.potions[obj].image+'">' + '<p>' +data.potions[obj].name + ' - <strong class="price">$'+ data.potions[obj].price+'</strong></p></div>' + '<div class="potions-photo"><img src="img/'+data.potions[obj].image +'"></div><h2>'+data.potions[obj].name +'</h2><h2>Use/Effect</h2><p>'+data.potions[obj].effect +'</p><h2>Ingredients:</h2><ul>'+ 
 					//ingredients loop
 					// for(var ing in data.potions[obj].ingredients){
 					// 	'<li>' + data.potions[obj].ingredients[ing] + '</li>'

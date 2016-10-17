@@ -126,6 +126,8 @@ section .potions #potions .potions-thumb {
   margin-bottom: 100px; }
   section .potions #potions .potions-thumb p strong.price {
     color: #d73a1e; }
+section .potions #potions .potions-modal {
+  display: none; }
 
 footer {
   background: #e6e6e6;

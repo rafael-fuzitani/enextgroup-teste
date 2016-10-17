@@ -27,13 +27,15 @@ function ajax_get_json(){
     potions.innerHTML = "requesting...";
 }
 
+document.getElementById('thumb').onclick = function() {
+	showModal()
+};
+
+
+
 function showModal() {
-	var thumb = document.getElementById('thumb');
+	
 	var modal = document.getElementById('modal'); 
-
-	thumb.addEventListener('click', function (e) {
-	  	console.log('clicou');
-	    modal.style.display = 'block';
-
-	});
+	modal.style.display = 'block';
+	
 } 

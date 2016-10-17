@@ -160,8 +160,9 @@ section {
 			.potions-thumb{
 				width: 33.33%;
 				display: inline-block;
+				text-align: center;
 				p {
-					strong.strong {
+					strong.price {
 						color: $myred;
 					}
 				}

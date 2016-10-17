@@ -121,8 +121,9 @@ header {
 
 section .potions #potions .potions-thumb {
   width: 33.33%;
-  display: inline-block; }
-  section .potions #potions .potions-thumb p strong.strong {
+  display: inline-block;
+  text-align: center; }
+  section .potions #potions .potions-thumb p strong.price {
     color: #d73a1e; }
 
 footer {

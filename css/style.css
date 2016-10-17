@@ -7,92 +7,181 @@ body {
 .potions-modal {
   display: none; }
 
+.col {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top; }
+
 h3, h4, p {
   font-family: "Droid Serif", serif; }
 
-header .upper {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-  margin-bottom: 40px; }
-  header .upper .logo {
-    width: 240px; }
-    header .upper .logo h1 {
-      font-size: 36px;
-      text-transform: uppercase;
-      font-family: "Oswald", sans-serif;
-      font-weight: 300;
-      color: #d73a1e;
-      margin: 0; }
-      header .upper .logo h1 strong {
-        font-weight: 400; }
-    header .upper .logo .subtitle {
-      width: 100%;
-      height: 10px;
-      border-bottom: 1px solid black;
-      text-align: center; }
-      header .upper .logo .subtitle span {
-        font-size: 12px;
-        padding: 0 5px;
-        background: #fff;
-        font-family: "Droid Serif", serif;
-        font-weight: 400;
-        font-style: italic;
-        color: #523468; }
-  header .upper .search-field {
-    border: 1px solid #523468;
-    border-radius: 5px;
-    width: 280px;
-    height: 40px;
-    display: inline-flex; }
-    header .upper .search-field .search-icon {
-      border: none;
-      background: none; }
-    header .upper .search-field .search {
-      border: none;
-      padding: 0; }
-  header .upper ::-webkit-input-placeholder {
-    /* WebKit, Blink, Edge */
-    color: #b3b3b3;
-    font-size: 12px; }
-  header .upper :-moz-placeholder {
-    /* Mozilla Firefox 4 to 18 */
-    color: #b3b3b3;
-    font-size: 12px;
-    opacity: 1; }
-  header .upper ::-moz-placeholder {
-    /* Mozilla Firefox 19+ */
-    color: #b3b3b3;
-    font-size: 12px;
-    opacity: 1; }
-  header .upper :-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: #b3b3b3;
-    font-size: 12px; }
-  header .upper .free-shipping {
-    color: #d73a1e; }
-    header .upper .free-shipping h4, header .upper .free-shipping p {
-      margin: 0;
-      font-style: italic; }
-  header .upper img.bag-icon {
-    width: 37px;
-    height: 43px; }
-  header .upper .bag {
-    display: inline-flex; }
-    header .upper .bag h3 {
-      color: #b3b3b3;
-      font-family: "Oswald", sans-serif;
-      font-weight: 300;
-      text-transform: uppercase; }
-header nav {
-  background: #523468;
-  padding: 30px 0 30px 70px; }
-  header nav a {
-    font-family: "Droid Serif", serif;
-    font-weight: 400;
-    color: #fff;
-    text-decoration: none;
-    margin-right: 30px; }
+header {
+  padding-top: 2em;
+  padding-bottom: 2em; }
+  header .upper {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px; }
+    header .upper .left {
+      width: 69%; }
+      header .upper .left .logo {
+        width: 280px;
+        display: inline-block; }
+        header .upper .left .logo h1 {
+          font-size: 43px;
+          text-transform: uppercase;
+          font-family: "Oswald", sans-serif;
+          font-weight: 300;
+          color: #d73a1e;
+          margin: 0; }
+          header .upper .left .logo h1 strong {
+            font-weight: 400; }
+        header .upper .left .logo .subtitle {
+          height: 10px;
+          border-bottom: 1px solid black;
+          text-align: center; }
+          header .upper .left .logo .subtitle span {
+            font-size: 12px;
+            padding: 0 5px;
+            background: #fff;
+            font-family: "Droid Serif", serif;
+            font-weight: 400;
+            font-style: italic;
+            color: #523468; }
+      header .upper .left .search-field {
+        display: inline-block;
+        width: 280px;
+        height: 40px;
+        border: 1px solid #523468;
+        border-radius: 5px;
+        margin-left: 65px; }
+        header .upper .left .search-field .search-icon {
+          border: none;
+          background: none;
+          margin-top: 5px; }
+        header .upper .left .search-field .search {
+          border: none;
+          padding: 0; }
+        header .upper .left .search-field input {
+          vertical-align: top;
+          height: 36px; }
+        header .upper .left .search-field ::-webkit-input-placeholder {
+          /* WebKit, Blink, Edge */
+          color: #b3b3b3;
+          font-size: 12px; }
+        header .upper .left .search-field :-moz-placeholder {
+          /* Mozilla Firefox 4 to 18 */
+          color: #b3b3b3;
+          font-size: 12px;
+          opacity: 1; }
+        header .upper .left .search-field ::-moz-placeholder {
+          /* Mozilla Firefox 19+ */
+          color: #b3b3b3;
+          font-size: 12px;
+          opacity: 1; }
+        header .upper .left .search-field :-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: #b3b3b3;
+          font-size: 12px; }
+    header .upper .right {
+      width: 30%;
+      text-align: right; }
+      header .upper .right .free-shipping {
+        color: #d73a1e;
+        display: inline-block; }
+        header .upper .right .free-shipping h4, header .upper .right .free-shipping p {
+          margin: 0;
+          font-style: italic; }
+      header .upper .right .bag-icon {
+        display: inline-block;
+        margin-left: 30px;
+        margin-right: 30px; }
+      header .upper .right .bag {
+        display: inline-block; }
+        header .upper .right .bag h3 {
+          color: #b3b3b3;
+          font-family: "Oswald", sans-serif;
+          font-weight: 300;
+          text-transform: uppercase; }
+          header .upper .right .bag h3 strong {
+            font-weight: 700;
+            color: #d73a1e; }
+  header nav {
+    background: #523468;
+    padding: 30px 0 30px 70px; }
+    header nav a {
+      font-family: "Droid Serif", serif;
+      font-weight: 400;
+      color: #fff;
+      text-decoration: none;
+      margin-right: 30px; }
 
 footer {
-  background: #e6e6e6; }
+  background: #e6e6e6;
+  padding: 30px 0;
+  height: 275px; }
+  footer .footer-container {
+    max-width: 950px;
+    margin-right: auto;
+    margin-left: auto; }
+    footer .footer-container .footer-left {
+      width: 49%; }
+      footer .footer-container .footer-left nav a {
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #d73a1e;
+        margin-right: 30px; }
+      footer .footer-container .footer-left p {
+        font-family: "Oswald", sans-serif;
+        font-weight: 300; }
+    footer .footer-container .news-letter {
+      background: #fff;
+      border-radius: 5px;
+      padding: 30px;
+      display: inline-block;
+      float: right; }
+      footer .footer-container .news-letter h4 {
+        margin-top: 0;
+        font-style: italic;
+        color: #523468; }
+      footer .footer-container .news-letter p {
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+        color: #523468; }
+      footer .footer-container .news-letter input {
+        width: 280px;
+        height: 40px;
+        border: 1px solid #523468;
+        border-radius: 5px;
+        padding-left: 10px; }
+      footer .footer-container .news-letter button {
+        width: 115px;
+        height: 40px;
+        color: #fff;
+        border: none;
+        background: #d73a1e;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 15px; }
+      footer .footer-container .news-letter ::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: #b3b3b3;
+        font-size: 15px; }
+      footer .footer-container .news-letter :-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #b3b3b3;
+        font-size: 15px;
+        opacity: 1; }
+      footer .footer-container .news-letter ::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #b3b3b3;
+        font-size: 15px;
+        opacity: 1; }
+      footer .footer-container .news-letter :-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #b3b3b3;
+        font-size: 15px; }

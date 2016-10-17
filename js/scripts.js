@@ -32,8 +32,8 @@ function showModal() {
 	var modal = document.getElementById('modal'); 
 
 	thumb.addEventListener('click', function (e) {
-	  if (e.target === e.currentTarget) {
+	  
 	    modal.style.display = 'block';
-	  }
+
 	});
 } 

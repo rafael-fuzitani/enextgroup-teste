@@ -7,11 +7,9 @@ function ajax_get_json(){
 	    if(hr.readyState === 4 && hr.status === 200) {
 		    var data = JSON.parse(hr.responseText);
 			potions.innerHTML = "";
-			potions.innerHTML = data.potions[1].name;
-			console.log(data.potions);
-			// for(var obj in data){
-			// 	potions.innerHTML += data[obj].name+" is "+data[obj].price+" and lives in "+data[obj].effect+"<hr />";
-			// }
+			for(var obj in data){
+				potions.innerHTML += data.potions[obj].name+" is "+data.potions[obj].price+" and lives in "+data.potions[obj].effect+"<hr />";
+			}
 	    }
     }
     hr.send(null);

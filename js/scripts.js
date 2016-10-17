@@ -7,7 +7,7 @@ function ajax_get_json(){
 	    if(hr.readyState === 4 && hr.status === 200) {
 		    var data = JSON.parse(hr.responseText);
 			potions.innerHTML = "";
-			for(var obj in data){
+			for(var obj in data.potions){
 				potions.innerHTML += data.potions[obj].name+" is "+data.potions[obj].price+" and lives in "+data.potions[obj].effect+"<hr />";
 			}
 	    }

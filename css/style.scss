@@ -154,9 +154,17 @@ header {
 	}
 }
 
-section#potions {
+section {
 	.potions {
-		 
+		#potions {
+			.potions-thumb{
+				p {
+					strong {
+						color: $myred;
+					}
+				}
+			}
+		} 
 	}
 }
 

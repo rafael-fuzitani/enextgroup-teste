@@ -15,7 +15,7 @@ function ajax_get_json(){
 						var ingListItem = '<li>' + objIngredients[j] + '</li>';
 						console.log(ingListItem);
 					 }
-				potions.innerHTML += '<div class="potions-thumb"><img src="img/thumbs/'+ potionsObjs.image+'">' + '<p>' + potionsObjs.name + ' - <strong class="price">$'+ potionsObjs.price+'</strong></p></div>' + '<div class="potions-modal"><div class="potions-photo"><img src="img/'+ potionsObjs.image +'"></div><div class="potions-infos"><h2>'+ potionsObjs.name +'</h2><h2>Use/Effect</h2><p>'+ potionsObjs.effect +'</p><h2>Ingredients:</h2><ul>' +
+				potions.innerHTML += '<div id="thumb" class="potions-thumb"><img src="img/thumbs/'+ potionsObjs.image+'">' + '<p>' + potionsObjs.name + ' - <strong class="price">$'+ potionsObjs.price+'</strong></p></div>' + '<div id="modal" class="potions-modal"><div class="potions-photo"><img src="img/'+ potionsObjs.image +'"></div><div class="potions-infos"><h2>'+ potionsObjs.name +'</h2><h2>Use/Effect</h2><p>'+ potionsObjs.effect +'</p><h2>Ingredients:</h2><ul>' +
 					//ingredients loop
 						ingListItem +					
 						'</ul><h2>Price:</h2><h2 class="price">$ '+ potionsObjs.price +'</h2></div></div>';
@@ -26,3 +26,14 @@ function ajax_get_json(){
     hr.send(null);
     potions.innerHTML = "requesting...";
 }
+
+function showModal {
+	var thumb = document.getElementById('thumb');
+	var modal = document.getElementById('modal'); 
+
+	thumb.addEventListener('click', function (e) {
+	  if (e.target === e.currentTarget) {
+	    modal.style.display = 'block';
+	  }
+	}
+} 

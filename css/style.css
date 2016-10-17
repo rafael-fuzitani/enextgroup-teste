@@ -132,12 +132,12 @@ section .potions #potions .potions-modal {
     display: inline-block; }
     section .potions #potions .potions-modal .potions-photo img {
       width: 400px; }
-  section .potions #potions .potions-modal .potions-info {
+  section .potions #potions .potions-modal .potions-infos {
     display: inline-block;
     vertical-align: top; }
-    section .potions #potions .potions-modal .potions-info h2:nth-child(4) {
+    section .potions #potions .potions-modal .potions-infos h2:nth-child(4) {
       margin-bottom: 0; }
-    section .potions #potions .potions-modal .potions-info h2.price {
+    section .potions #potions .potions-modal .potions-infos h2.price {
       margin-top: 0;
       color: #d73a1e; }
 

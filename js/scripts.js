@@ -10,7 +10,7 @@ function ajax_get_json(){
 			for(var obj in data.potions){
 				var potionsObjs = data.potions[obj];
 					console.log('before nested loop!');
-					console.log(potionsObjs.ingredients)
+					console.log(potionsObjs.ingredients);
 				for(var j = 0; j < potionsObjs.length; j++){ 
 					var objIngredients = potionsObjs.ingredients[j]; 
 						console.log(objIngredients);

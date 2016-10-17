@@ -8,7 +8,7 @@ function ajax_get_json(){
 		    var data = JSON.parse(hr.responseText);
 			potions.innerHTML = "";
 			potions.innerHTML = data;
-
+			console.log(data.potions);
 			// for(var obj in data){
 			// 	potions.innerHTML += data[obj].name+" is "+data[obj].price+" and lives in "+data[obj].effect+"<hr />";
 			// }

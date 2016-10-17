@@ -27,7 +27,7 @@ function ajax_get_json(){
     potions.innerHTML = "requesting...";
 }
 
-function showModal {
+function showModal() {
 	var thumb = document.getElementById('thumb');
 	var modal = document.getElementById('modal'); 
 

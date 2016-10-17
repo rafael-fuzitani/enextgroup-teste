@@ -127,7 +127,11 @@ section .potions #potions .potions-thumb {
   section .potions #potions .potions-thumb p strong.price {
     color: #d73a1e; }
 section .potions #potions .potions-modal {
-  display: none; }
+  display: none;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  padding: 40px; }
   section .potions #potions .potions-modal .potions-photo {
     display: inline-block; }
     section .potions #potions .potions-modal .potions-photo img {

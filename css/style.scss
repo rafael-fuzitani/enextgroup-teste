@@ -170,6 +170,10 @@ section {
 			}
 			.potions-modal {
 				display: none;
+				position: fixed;
+				top: 0;
+				background: #fff;
+				padding: 40px;
 				.potions-photo {
 					display: inline-block;
 					img {

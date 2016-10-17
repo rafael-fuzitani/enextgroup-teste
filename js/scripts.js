@@ -35,5 +35,5 @@ function showModal() {
 	  if (e.target === e.currentTarget) {
 	    modal.style.display = 'block';
 	  }
-	}
+	});
 } 

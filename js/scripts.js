@@ -32,7 +32,7 @@ function showModal() {
 	var modal = document.getElementById('modal'); 
 
 	thumb.addEventListener('click', function (e) {
-	  
+	  	console.log('clicou');
 	    modal.style.display = 'block';
 
 	});
